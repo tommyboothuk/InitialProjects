@@ -1,11 +1,19 @@
+.centered {
+    position: fixed;
+    top: 35%;
+    left: 40%;
+}
+
 .dial {
     height: 400px;
     width: 400px;
 }
 
 .timer {
-    position: relative;
+    position: fixed;
     display: inline-block;
+    top: 35%;
+    left: 40%;
 }
 
 * {
