@@ -2,7 +2,7 @@ const durationInput = document.querySelector('#duration');
 const startButton = document.querySelector('#start');
 const pauseButton = document.querySelector('#pause');
 const circle = document.querySelector('circle');
-
+const audio = new Audio("alarm.wav");
 const perimeter = circle.getAttribute('r') * 2 * Math.PI;
 circle.setAttribute('stroke-dasharray', perimeter);
 
@@ -20,5 +20,8 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     },
     onComplete() {
         console.log('Timer is completed');
+        audio.play();
     }
 });
+
+
